@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie - Online Food Ordering System</title>
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/food.css">
+</head>
+
+<body>
+
+    <!-- ===============NAVBAR============= -->
+    <nav class="navbar">
+
+        <!-- Logo -->
+
+        <div class="logo">
+            <img src="../images/logo.png" alt="Logo">
+            <div>
+                <h3>Foodie</h3>
+                <span>Delicious Food, Fast Delivery</span></div>
+        </div>
+
+
+        <div class="heading-1">
+            <h2>FOOD ORDERING SYSTEM</h2>
+        </div>
+
+    </nav>
+
+
+    <!--================Card Section==============-->
+
+
+    <section class="menu">
+        <!-- Heading -->
+        <div class="heading-2">
+            <img src="../images/spoon.png" alt="Spoon image">
+            <h2>Our Menu</h2>
+        </div>
+
+
+        <!-- Products -->
+        <div class="products" id="products">
+            <!-- Burger card -->
+            <div>
+                <img src="../images/burger.png" alt="Burger">
+                <h2>Classic Beef Burger</h2>
+                <p>Juicy grilled beef patty with fresh lettuce, tomato, and melted cheese, served in a soft toasted bun with our special sauce.</p>
+                <p>$30</p>
+                <button onclick="AddtoCart('Burger', 'discription', 40, '../images/burger.png')">Add to Cart</button>
+            </div>
+
+            <!-- Pizza card -->
+            <div>
+                <img src="../images/pizza.png" alt="Pizza">
+                <h2>Cheesy Delight Pizza</h2>
+                <p>Loaded with rich mozzarella cheese, fresh vegetables, and a crispy crust, baked to perfection for an irresistible taste.</p>
+                <p>$90</p>
+                <button onclick="AddtoCart('Pizza', 'discription', 90, '../images/pizza.png')">Add to Cart</button>
+            </div>
+            <!-- Fries card -->
+            <div>
+                <img src="../images/fries.png" alt="fries">
+                <h2>Crispy French Fries</h2>
+                <p>Golden, crispy fries seasoned with a touch of salt, perfectly fried for a crunchy outside and soft inside.</p>
+                <p>$80</p>
+
+                <button onclick="AddtoCart('Fries','discription', 80, '../images/fries.png')">Add to Cart</button>
+            </div>
+
+
+
+        </div>
+
+        <div>
+            <ul id="cart"></ul>
+
+
+            <h3 id="total">Total: $0</h3>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <script src="../javascript/food.js"></script>
+</body>
+
+</html>

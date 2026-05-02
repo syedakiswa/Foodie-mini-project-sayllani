@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ========Navbar Styling======== */
+
+.navbar {
+    position: static;
+    display: flex;
+    gap: 60px;
+    border-radius: 20px;
+    width: 80%;
+    margin: 40px 40px 40px 140px;
+    color: white;
+    background: #833AB4;
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 96, 29, 1) 0%, rgba(252, 135, 58, 1) 86%, rgba(252, 176, 69, 1) 100%);
+}
+
+
+/* Logo styling */
+
+.logo {
+    display: flex;
+}
+
+.logo img {
+    width: 160px;
+    height: auto;
+}
+
+.logo h3 {
+    margin-top: 29px;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.logo span {
+    font-weight: bold;
+    font-size: large;
+    font-family: sans-serif;
+}
+
+.heading-1 h2 {
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: x-large;
+    font-family: sans-serif;
+}
+
+
+/* Card Section */
+
+.menu {
+    margin: 50px;
+}
+
+.heading-2 {
+    margin: 80px;
+    display: flex;
+    gap: 20px;
+}
+
+.heading-2 h2 {
+    color: orange;
+    text-decoration: underline;
+    text-decoration-color: orange;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: sans-serif;
+}
+
+.heading-2 img {
+    width: 80px;
+    height: auto;
+    background: orange;
+    border-radius: 20px;
+}
+
+
+/* Products container */
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+
+/* Each card */
+
+.products div {
+    background: white;
+    width: 260px;
+    padding: 15px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+}
+
+
+/* Hover effect */
+
+.products div:hover {
+    transform: translateY(-10px);
+}
+
+
+/* Image */
+
+.products img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+
+/* Heading */
+
+.products h2 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #333;
+}
+
+
+/* Description */
+
+.products p {
+    font-size: 14px;
+    color: #666;
+}
+
+
+/* Price (last p ko target kar rahe hain) */
+
+.products div p:last-of-type {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff5a5f;
+    margin: 10px 0;
+}
+
+
+/* Button */
+
+.products button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #ff7a18, #ff3d3d);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.products button:hover {
+    background: linear-gradient(135deg, #ff3d3d, #ff0000);
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* BUTTONS */
+
+.actions button {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.remove {
+    color: red;
+    background: transparent;
+}
+
+
+/* CART CONTAINER */
+
+#cart {
+    width: 70%;
+    margin: 40px auto;
+}
+
+
+/* CART ITEM */
+
+#cart li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+/* IMAGE */
+
+#cart img {
+    width: 150px;
+    height: 730px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+/* INFO SECTION */
+
+.info {
+    flex: 1;
+    margin-left: 15px;
+}
+
+.info h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #222;
+}
+
+.info p {
+    font-size: 13px;
+    color: gray;
+}
+
+.info span {
+    font-weight: bold;
+    color: #2c3e50;
+    display: block;
+    margin-top: 5px;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+/* BUTTONS */
+
+.actions button {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/* REMOVE BUTTON */
+
+.remove {
+    background: red;
+    color: white;
+}
+
+
+/* PLUS MINUS */
+
+.actions button:not(.remove) {
+    background: #eee;
+    color: #333;
+}
+
+
+/* TOTAL SECTION */
+
+#total {
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #ff5a5f;
+    font-family: sans-serif;
+}
