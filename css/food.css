@@ -115,8 +115,9 @@ body {
 
 .products img {
     width: 100%;
-    height: auto;
-    object-fit: contain;
+    height: 160px;
+    object-fit: contain;   
+    background: #f5f5f5;   
     border-radius: 10px;
 }
 
